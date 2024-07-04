@@ -20,7 +20,7 @@ def validar_contraseña(contraseña):
         requisitos_faltantes.append("contener al menos un carácter especial")
     
     if requisitos_faltantes:
-        return "La contraseña no es válida: debe " + " / ".join(requisitos_faltantes) + "."
+        return "La contraseña no es válida. Requisitos faltantes: " + " / ".join(requisitos_faltantes) + "."
     else:
         return "La contraseña es válida."
 
